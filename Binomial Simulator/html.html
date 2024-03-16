@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="head">Binomial Simulator</h1>
+  <p id="head2">Enter your numbers!</p>
+  <div class="container">
+    <form id=simnum>
+      <div class="input">
+        <label for="nnum">Enter your N: </label>
+        <input id="nnum" type="number" min="0" required>
+      </div>
+      <div class="input">
+        <label for="pnum">Enter your P: </label>
+        <input id="pnum" type="number" min="0" max="1" step="0.01" required>
+      </div>
+      <div class="input">
+        <label for="snum">Successes: </label>
+        <input id="snum" type="number" min="0" required>
+      </div>
+      <div class="input">
+        <label for="tnum">Trials: </label>
+        <input id="tnum" type="number" min="0"  placeholder="Recommended to be 1000" required>
+      </div>
+      <button id="button1" type="button">Simulate</button>
+      <button id="button2" type="button">Clear</button>
+    </form>
+    <div class="res">
+      <h2>Results:</h2>
+      <p id="results"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
